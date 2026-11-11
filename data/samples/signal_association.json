@@ -1,0 +1,60 @@
+{
+  "schema": "spark.signal_association.v1",
+  "warning": "trade-only, no book state, not a backtest",
+  "venues": {
+    "hyperliquid": {
+      "prints": 10,
+      "horizons": [
+        {
+          "n": 9,
+          "horizon_ms": 100,
+          "corr_sign_vs_logret": 0.07470743369148819
+        },
+        {
+          "n": 9,
+          "horizon_ms": 500,
+          "corr_sign_vs_logret": 0.13156294209560557
+        },
+        {
+          "n": 9,
+          "horizon_ms": 1000,
+          "corr_sign_vs_logret": 0.07470743369148819
+        },
+        {
+          "n": 0,
+          "horizon_ms": 5000,
+          "corr_sign_vs_logret": null
+        }
+      ],
+      "inference": "not_supported",
+      "reason": "sample below 200 aligned observations"
+    },
+    "lighter": {
+      "prints": 400,
+      "horizons": [
+        {
+          "n": 399,
+          "horizon_ms": 100,
+          "corr_sign_vs_logret": -0.3309283956601944
+        },
+        {
+          "n": 399,
+          "horizon_ms": 500,
+          "corr_sign_vs_logret": -0.24135442650833577
+        },
+        {
+          "n": 399,
+          "horizon_ms": 1000,
+          "corr_sign_vs_logret": -0.3093544714712517
+        },
+        {
+          "n": 385,
+          "horizon_ms": 5000,
+          "corr_sign_vs_logret": -0.1569361425499588
+        }
+      ],
+      "inference": "descriptive_only",
+      "reason": "correlation is not a tradable edge and fees are not applied"
+    }
+  }
+}

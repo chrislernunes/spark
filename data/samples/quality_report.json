@@ -1,0 +1,76 @@
+{
+  "schema": "spark.data_quality.v1",
+  "root": "data/samples",
+  "files": [
+    {
+      "path": "data/samples/hl_l2_btc.json",
+      "sha256_ok": true,
+      "bytes": 1573
+    },
+    {
+      "path": "data/samples/hl_trades_btc.json",
+      "sha256_ok": true,
+      "bytes": 2751
+    },
+    {
+      "path": "data/samples/hl_funding_btc.json",
+      "sha256_ok": true,
+      "bytes": 4245
+    },
+    {
+      "path": "data/samples/hl_btc_meta.json",
+      "sha256_ok": true,
+      "bytes": 266
+    },
+    {
+      "path": "data/samples/lighter_btc_meta.json",
+      "sha256_ok": true,
+      "bytes": 1071
+    },
+    {
+      "path": "data/samples/lighter_orders_btc.json",
+      "sha256_ok": true,
+      "bytes": 9156
+    },
+    {
+      "path": "data/samples/lighter_trades_btc.json",
+      "sha256_ok": true,
+      "bytes": 517189
+    },
+    {
+      "path": "data/samples/lighter_funding_btc.json",
+      "sha256_ok": true,
+      "bytes": 3931
+    }
+  ],
+  "issues": [],
+  "coverage": {
+    "hl_trades_btc.json": {
+      "span_ms": 4282,
+      "duplicate_ids": 0,
+      "rows": 10
+    },
+    "hyperliquid_trades": {
+      "count": 10,
+      "continuous_history": false,
+      "reason": "info recentTrades returns a short tail, not the S3 fill archive"
+    },
+    "lighter_trades_btc.json": {
+      "span_ms": 113596,
+      "duplicate_ids": 0,
+      "rows": 400
+    },
+    "lighter_trades": {
+      "count": 400,
+      "continuous_history": false,
+      "reason": "paginated recent REST trades, not the AWS Open Data parquet set"
+    },
+    "hyperliquid_l2": {
+      "kind": "single_snapshot",
+      "bid_levels": 20,
+      "ask_levels": 20,
+      "incremental_history": false
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,30 @@
+{
+  "mode": "paper",
+  "live_authorized": false,
+  "primary_venue": "hyperliquid",
+  "secondary_venue": "lighter",
+  "coin": "BTC",
+  "lighter_market_id": 1,
+  "quote_lots": "0.001",
+  "risk": {
+    "max_position_btc": 0.01,
+    "max_order_btc": 0.002,
+    "max_outstanding_orders": 4,
+    "max_daily_loss_usd": 50,
+    "max_feed_age_ms": 1500,
+    "max_orders_per_sec": 2,
+    "kill_switch": false
+  },
+  "fees": {
+    "hyperliquid_perps_base_tier_taker": 0.00045,
+    "hyperliquid_perps_base_tier_maker": 0.00015,
+    "note": "Hyperliquid fees are account-tier specific. These are the published base-tier perps rates, not this operator's tier. Lighter fees must be read from orderBooks for the market and are not hardcoded."
+  },
+  "glft": {
+    "gamma": 0.05,
+    "xi": 0.05,
+    "k": 0.02,
+    "A": null,
+    "A_note": "null until censored intensity MLE has at least 30 fills. The desk uses an explicit uncalibrated placeholder and labels it."
+  }
+}

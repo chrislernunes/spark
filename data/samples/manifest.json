@@ -1,0 +1,76 @@
+{
+  "schema": "spark.manifest.v1",
+  "coin": "BTC",
+  "notes": [
+    "Hyperliquid l2Book is one live snapshot of published depth, not a history of incremental updates.",
+    "S3 archive s3://hyperliquid-archive/market_data is requester-pays and was not downloaded.",
+    "Lighter public trades are a recent window, not the AWS Open Data parquet archive."
+  ],
+  "files": [
+    {
+      "source": "hyperliquid.info.l2Book",
+      "kind": "l2_snapshot",
+      "path": "data/samples/hl_l2_btc.json",
+      "bytes": 1573,
+      "sha256": "6c7f1e6eeeef79e6d6d72803d7098dca479a8c4377261e3d5bd2d1979ba45f26",
+      "collected_at_unix_ms": 1794394991799
+    },
+    {
+      "source": "hyperliquid.info.recentTrades",
+      "kind": "trades_recent",
+      "path": "data/samples/hl_trades_btc.json",
+      "bytes": 2751,
+      "sha256": "01f7105181c781ea73289e604658c0a3da5f0053f2121fc8a351b3796e29301a",
+      "collected_at_unix_ms": 1794394992015
+    },
+    {
+      "source": "hyperliquid.info.fundingHistory",
+      "kind": "funding",
+      "path": "data/samples/hl_funding_btc.json",
+      "bytes": 4245,
+      "sha256": "3cd9d017f12b544587b4088b38b024589b699e58741bf34a23ba4a7f09cbc43d",
+      "collected_at_unix_ms": 1794394992223
+    },
+    {
+      "source": "hyperliquid.info.meta",
+      "kind": "instrument",
+      "path": "data/samples/hl_btc_meta.json",
+      "bytes": 266,
+      "sha256": "b95a5c898db8742cbb60715ad889ae1d355b97415010aee99f8883f47c1a096f",
+      "collected_at_unix_ms": 1794394992421
+    },
+    {
+      "source": "lighter.orderBooks",
+      "kind": "instrument",
+      "path": "data/samples/lighter_btc_meta.json",
+      "bytes": 1071,
+      "sha256": "bcb0d14cf6d12b64815a4c71ea038efc444aecf64f23a9f193840afb9d0b4b28",
+      "collected_at_unix_ms": 1794394992688
+    },
+    {
+      "source": "lighter.orderBookOrders",
+      "kind": "order_snapshot",
+      "path": "data/samples/lighter_orders_btc.json",
+      "bytes": 9156,
+      "sha256": "645bdbba5eb97a8f0aae4780f020e85f17fb2a61a4cd929c19b0985852d87ed0",
+      "collected_at_unix_ms": 1794394992904
+    },
+    {
+      "source": "lighter.trades",
+      "kind": "trades_recent",
+      "trade_count": 400,
+      "path": "data/samples/lighter_trades_btc.json",
+      "bytes": 517189,
+      "sha256": "4c95de8778ae6d43316f7312f6bca95c52cff6ed1321564e4fbfc39eca784e4e",
+      "collected_at_unix_ms": 1794394995075
+    },
+    {
+      "source": "lighter.fundings",
+      "kind": "funding",
+      "path": "data/samples/lighter_funding_btc.json",
+      "bytes": 3931,
+      "sha256": "85b60208d783eccc4bc9c50184e93f84450a7403c2d43471436fdd49c70645b0",
+      "collected_at_unix_ms": 1794394995304
+    }
+  ]
+}

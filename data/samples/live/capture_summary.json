@@ -1,0 +1,24 @@
+{
+  "hyperliquid": {
+    "path": "data/samples/live/hyperliquid.jsonl",
+    "messages": 45,
+    "counts": {
+      "subscriptionResponse": 4,
+      "l2Book": 2,
+      "trades": 4,
+      "activeAssetCtx": 6,
+      "bbo": 29
+    },
+    "nonce_gaps": 0
+  },
+  "lighter": {
+    "path": "data/samples/live/lighter.jsonl",
+    "messages": 122,
+    "counts": {
+      "connected": 1,
+      "order_book:1": 100,
+      "trade:1": 21
+    },
+    "nonce_gaps": 0
+  }
+}

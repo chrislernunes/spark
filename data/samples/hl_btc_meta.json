@@ -1,0 +1,11 @@
+{
+  "source": "hyperliquid.info.meta",
+  "universe_count": 235,
+  "btc": {
+    "szDecimals": 5,
+    "name": "BTC",
+    "maxLeverage": 40,
+    "marginTableId": 56
+  },
+  "note": "Full universe is not stored in the sample. szDecimals is the size increment exponent."
+}
